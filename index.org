@@ -63,7 +63,6 @@ This distribution is compiled to support all the libraries made available to be 
 ** Where is a [your favorite platform] binaries?
 While I actually compile my own Emacs for Linux and Mac OS X, I don't provide them. Most Linux distributions have someone packaging Emacs for their package managers. For Mac OS X, there's an existing effort for [[http://emacsformacosx.com/][binary distribution]].
 
-
 ** Where's that splash screen?
 You mean [[https://plus.google.com/103005664980673293345/posts/DzmihL834mt][this]]? It's not included. You have to make your own -- look up "fancy splash" in the Customization.
 
@@ -79,3 +78,7 @@ You mean [[https://plus.google.com/103005664980673293345/posts/DzmihL834mt][this
 
 </script>
 #+END_HTML
+
+* Other links
+- [[http://www.gnu.org/software/emacs/][GNU Emacs]] at [[http://www.fsf.org/][Free Software Foundation]]
+- [[https://github.com/hsaito/hidekisaito-emacs-build-page][Source of this page]] at [[http://www.github.com/][GitHub]]
