@@ -1,0 +1,73 @@
+# -*- coding: utf-8-unix -*-
+#+TITLE:     How to Build Emacs on Windows
+#+AUTHOR:    Hideki Saito
+#+EMAIL:     hidekis@gmail.com
+#+DESCRIPTION: Explaining how to build Emacs on Windows
+#+KEYWORDS: Emacs, software, OSS, compile, build, Windows 
+#+STYLE: <link rel="stylesheet" type="text/css" href="style.css" />
+#+STYLE: <script type="text/javascript">
+#+STYLE:   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+#+STYLE:   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+#+STYLE:   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+#+STYLE:   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+#+STYLE: 
+#+STYLE:   ga('create', 'UA-114515-36', 'hclippr.org');
+#+STYLE:   ga('send', 'pageview');
+#+STYLE: 
+#+STYLE: </script>
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP: index.html
+#+LINK_HOME: index.html
+#+XSLT:
+
+* Getting files
+** Source
+Get the tarball from [[http://www.gnu.org/software/emacs/][GNU Emacs]] page.
+** Build Tools
+You will need some build tools. [[http://www.mingw.org/][MinGW]] provides tools you need in order to compile Emacs. Specifically, you need *make* and *gcc* tools from MinGW.
+
+The *makeinfo* tool from [[http://gnuwin32.sourceforge.net/packages/texinfo.htm][TexInfo]] is also required.[fn::I found that the latest version of TexInfo crashes while processing Emacs files -- you may want [[http://sourceforge.net/projects/gnuwin32/files/texinfo/4.8/][4.8]] instead.]
+
+The [[http://gnuwin32.sourceforge.net/packages/coreutils.htm][CoreUtils]] provides many of required tools, so install it, too.
+
+** Dependencies
+In addition, you may want to install the following dependencies. Using setup application is far easier way of handling this.
+- [[http://gnuwin32.sourceforge.net/packages/libpng.htm][LibPng]]
+- [[http://gnuwin32.sourceforge.net/packages/jpeg.htm][Jpeg]]
+- [[http://gnuwin32.sourceforge.net/packages/giflib.htm][GIfLib]]
+- [[http://gnuwin32.sourceforge.net/packages/tiff.htm][Tiff]]
+- [[http://www.zlatkovic.com/libxml.en.html][LibXml]]
+- [[http://www.gnutls.org/][GnuTLS]]
+- [[http://gnuwin32.sourceforge.net/packages/xpm.htm][XPM]]
+
+* Compile Procedures
+** Configuring
+First, go to /nt/ directory within the uncompressed Emacs source file.
+
+Before proceeding, temporarily turn off your malware scanners. Yes, I meant it. Some of stricter malware scanners cause false alarm while building Emacs and can cause the build process to fail. 
+
+Issue the following command where /path-to-dependency-includes/ being place of your includes (*.h) files. 
+#+BEGIN_QUOTE
+configure.bat --with-gcc --cflags -I /path-to-dependency-includes/
+#+END_QUOTE
+
+** Build
+The following command will make the build
+#+BEGIN_QUOTE
+make
+#+END_QUOTE
+
+The following command will then make distribution file.[fn::You will need /7z.exe/ in the path to this to work.] I found it easier to just make dist file first then issuing /make install/ -- this way, you can install your Emacs distribution to any places of your choice.
+
+#+BEGIN_QUOTE
+make dist
+#+END_QUOTE 
+
+* Other Information
+- [[http://ourcomments.org/Emacs/w32-build-emacs.html][Building Emacs on MS Windows]], although based on the older Emacs distributions, many of parts are still pertinent.
+- The /INSTALL/ file within /nt/ directory inside Emacs source titled /Building and Installing Emacs on Windows (from 95 to 7 and beyond)/ explains details about building process.

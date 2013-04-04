@@ -2,7 +2,7 @@
 #+TITLE:     Hideki Saito's Emacs Builds
 #+AUTHOR:    Hideki Saito
 #+EMAIL:     hidekis@gmail.com
-#+DESCRIPTION:
+#+DESCRIPTION: Emacs Builds prepared by Hideki Saito
 #+KEYWORDS: Emacs, software, OSS, compile, build, Windows 
 #+STYLE: <link rel="stylesheet" type="text/css" href="style.css" />
 #+STYLE: <script type="text/javascript">
@@ -25,12 +25,7 @@
 #+LINK_HOME: 
 #+XSLT:
 
-
-
-
-* About Hideki Saito
-** Who is Hideki Saito?
-See [[https://plus.google.com/+HidekiSaito/][my Google+ page]]
+This site provides a precompiled build of Emacs prepared by Hideki Saito. (Currently for Windows)
 
 * Download
 Current version: *24.3*
@@ -77,12 +72,22 @@ This distribution is compiled to support all the libraries made available to be 
 - [[http://www.zlatkovic.com/libxml.en.html][LibXml]]
 - [[http://www.gnutls.org/][GnuTLS]]
 
+** How do I build Emacs?
+It is bit complicated process, but I have provided [[file:howto.org][documentation]] of how it can be done.
+
 ** Where is a [your favorite platform] binaries?
 While I actually compile my own Emacs for Linux and Mac OS X, I don't provide them. Most Linux distributions have someone packaging Emacs for their package managers. For Mac OS X, there's an existing effort for [[http://emacsformacosx.com/][binary distribution]].
 
 ** Where's that splash screen?
 You mean [[https://plus.google.com/103005664980673293345/posts/DzmihL834mt][this]]? It's not included. You have to make your own -- look up "fancy splash" in the Customization.
 
+
+
+* About Hideki Saito
+** Who is Hideki Saito?
+See [[https://plus.google.com/+HidekiSaito/][my Google+ page]]
+** What Hideki's most favorite things about Emacs?
+I've prepared [[file:emacs.org][an essay]] about it. Check it out!
 
 
 * Other links
