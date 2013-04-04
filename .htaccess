@@ -1,0 +1,15 @@
+SetOutputFilter DEFLATE
+BrowserMatch ^Mozilla/4 gzip-only-text/html
+BrowserMatch ^Mozilla/4\.0[678] no-gzip
+BrowserMatch \bMSIE\s6 no-gzip
+BrowserMatch \bMSIE\s7 !no-gzip !gzip-only-text/html
+SetEnvIfNoCase Request_URI \
+        \.(?:gif|jpe?g|png|pdf|swf|ipk)$ no-gzip dont-vary
+Header append Vary User-Agent env=!dont-vary
+
+<IfModule mod_setenvif.c>
+  <IfModule mod_headers.c>
+    BrowserMatch chromeframe gcf
+    Header append X-UA-Compatible "chrome=1" env=gcf
+  </IfModule>
+</IfModule>
