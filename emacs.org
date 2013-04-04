@@ -39,3 +39,8 @@ Today, I use Emacs on [[http://www.linux.org][Linux]], Mac, and Windows. My sub-
 * What's my favorite feature on Emacs?
 - [[http://orgmode.org/][Org-mode]]
 
+
+* About Hideki Saito
+Hideki Saito is a producer with many years of experience in technology field, mainly in the video game industry. Past experiences including Lua coding for video game event scripting as well as UI composition. Hideki also manages Japanese Guest Relations team at Asia Northwest Cultural Education Association/Sakura-Con as a Japanese Guest Manager since 2003. (Initially started as Japanese Guest Liaison in 2002.)
+- For personal inquiries: [[https://plus.google.com/+HidekiSaito/][Hideki Saito at Google+]]
+- For professional inquiries: [[http://www.linkedin.com/in/hideki/][Hideki Saito at LinkedIn]]
