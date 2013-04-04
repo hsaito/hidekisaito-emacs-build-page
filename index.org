@@ -1,3 +1,4 @@
+# -*- coding: utf-8-unix -*-
 #+TITLE:     Hideki Saito's Emacs Builds
 #+AUTHOR:    Hideki Saito
 #+EMAIL:     hidekis@gmail.com
