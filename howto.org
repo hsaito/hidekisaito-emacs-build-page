@@ -53,19 +53,22 @@ Before proceeding, temporarily turn off your malware scanners. Yes, I meant it. 
 
 Issue the following command where /path-to-dependency-includes/ being place of your includes (*.h) files. 
 #+BEGIN_QUOTE
-configure.bat --with-gcc --cflags -I /path-to-dependency-includes/
+=configure.bat --with-gcc --cflags -I /path-to-dependency-includes/=
 #+END_QUOTE
 
 ** Build
 The following command will make the build
+
+
 #+BEGIN_QUOTE
-make
+=make=
 #+END_QUOTE
 
 The following command will then make distribution file.[fn::You will need /7z.exe/ in the path to this to work.] I found it easier to just make dist file first then issuing /make install/ -- this way, you can install your Emacs distribution to any places of your choice.
 
+
 #+BEGIN_QUOTE
-make dist
+=make dist=
 #+END_QUOTE 
 
 * Other Information

@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Orbitron:900|Roboto|Electrolize);
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro);
 
 html { font-family: 'Roboto', sans-serif; font-size: 12pt; }
 
@@ -68,4 +69,8 @@ a:active{
   -moz-box-shadow: 0 0 5px 5px #006000;
   -webkit-box-shadow: 0 0 5px 5px #006000;
   box-shadow: 0 0 5px 5px #006000;
+}
+
+code {
+  font-family: 'Source Code Pro', sans-serif;
 }

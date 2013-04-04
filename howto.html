@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
 <meta name="title" content="How to Build Emacs on Windows"/>
 <meta name="generator" content="Org-mode"/>
-<meta name="generated" content="2013-04-04T13:44-0700"/>
+<meta name="generated" content="2013-04-04T13:53-0700"/>
 <meta name="author" content="Hideki Saito"/>
 <meta name="description" content="Explaining how to build Emacs on Windows"/>
 <meta name="keywords" content="Emacs, software, OSS, compile, build, Windows "/>
@@ -214,7 +214,7 @@ Before proceeding, temporarily turn off your malware scanners. Yes, I meant it. 
 Issue the following command where <i>path-to-dependency-includes</i> being place of your includes (*.h) files. 
 </p><blockquote>
 
-<p>configure.bat &ndash;with-gcc &ndash;cflags -I <i>path-to-dependency-includes</i>
+<p><code>configure.bat --with-gcc --cflags -I /path-to-dependency-includes/</code>
 </p>
 </blockquote>
 
@@ -228,9 +228,11 @@ Issue the following command where <i>path-to-dependency-includes</i> being place
 <div class="outline-text-3" id="text-2-2">
 
 <p>The following command will make the build
-</p><blockquote>
+</p>
 
-<p>make
+<blockquote>
+
+<p><code>make</code>
 </p>
 </blockquote>
 
@@ -238,9 +240,10 @@ Issue the following command where <i>path-to-dependency-includes</i> being place
 <p>
 The following command will then make distribution file.<sup><a class="footref" name="fnr-.2" href="#fn-.2">2</a></sup> I found it easier to just make dist file first then issuing <i>make install</i> &ndash; this way, you can install your Emacs distribution to any places of your choice.
 </p>
+
 <blockquote>
 
-<p>make dist
+<p><code>make dist</code>
 </p>
 </blockquote>
 
@@ -278,7 +281,7 @@ The following command will then make distribution file.<sup><a class="footref" n
 </div>
 
 <div id="postamble">
-<p class="date">Date: 2013-04-04T13:44-0700</p>
+<p class="date">Date: 2013-04-04T13:53-0700</p>
 <p class="author">Author: Hideki Saito</p>
 <p class="creator"><a href="http://orgmode.org">Org</a> version 7.9.4 with <a href="http://www.gnu.org/software/emacs/">Emacs</a> version 24</p>
 <a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>
