@@ -3,7 +3,7 @@
 #+AUTHOR:    Hideki Saito
 #+EMAIL:     hidekis@gmail.com
 #+DESCRIPTION:
-#+KEYWORDS: emacs software compile build 
+#+KEYWORDS: Emacs, software, OSS, compile, build, Windows 
 #+STYLE: <link rel="stylesheet" type="text/css" href="style.css" />
 #+LANGUAGE:  en
 #+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
