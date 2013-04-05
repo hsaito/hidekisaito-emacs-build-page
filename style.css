@@ -19,8 +19,8 @@ body {
 }
 
 #emacs_screenshot {
-  width: 650px;
-  height: 696px;
+  width: 696px;
+  height: 650px;
   -moz-border-radius: 5px;
   border-radius: 5px;
   -moz-box-shadow: 5px 5px 5px black;
