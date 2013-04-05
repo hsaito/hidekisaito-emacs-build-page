@@ -38,12 +38,12 @@ Use the following link to download the build:
 - [[file:emacs-24.3-barebin-i386-hs.zip][Emacs Barebin Build]] and its [[file:emacs-24.3-barebin-i386-hs.zip.sig][signature file]] (mostly useful for upgrading)
 - [[file:xpm4.dll][XPM library]] and its [[file:xpm4.dll.sig][signature]] (This is provided here as lack of this file will affect correct rendering of toolbar and such.)
 
-*** Linux (Experimental)
-- [[file:emacs-24.3-linux-bin-x86_64-hs.tar.gz][Emacs binary tarball]] and its [[file:emacs-24.3-linux-bin-x86_64-hs.tar.gz.sig][signature file]] (for x86_64)
-- x86 32-bit version coming soon.
-
 *** Mac
 - [[file:Emacs-24_3-hs.dmg][Emacs build dmg disk image]] and its [[file:Emacs-24_3-hs.dmg.sig][signature file]]
+
+*** Linux
+Linux precompiled binary was attempted, however, handling of shared library makes it unpractical unless it is coupled with a package manager which can automatically satisfy dependencies, which I will not be committing at this point. Precompiled binaries on Linux will require every dependant shared libraries to exist in the system (and won't even run without them, whether you are using it or not) therefore, to provide /out of the box/ experience with Linux will require every dependencies to be packed into the binary, which is is not very realistic. Since making users going through mess of having users install dependencies just to run this build is as bad as having them get tools required to compile an then compile one themselves. (Which is not that complicated on Linux, really.) For users not willing to compile the build themselves can either stick with one bundled with the operating itself, or find third-party package manager who packages latest Emacs for their distributions.
+
 
 ** Source files
 - [[file:emacs-24.3.tar.gz][Emacs Source]] and its [[file:emacs-24.3.tar.gz.sig][signature]] signed by the official distribution.
@@ -84,9 +84,6 @@ It is built and tested on Windows 7. It should run on most of modern, but older 
 *** Mac
 Built and tested on 10.8. May run on earlier version.
 
-*** Linux
-Built and tested on Ubuntu 12.10 with Linux 3.5.0 kernel.
-
 ** Which library does it include?
 *** For Windows
 This distribution is compiled to support all the libraries made available to be supported on Emacs on Windows. Having said that, you will need to download appropriate library to use those features.
@@ -101,17 +98,12 @@ This distribution is compiled to support all the libraries made available to be 
 *** For Mac
 The distribution should satisfy every dependencies.
 
-*** For Linux
-Pretty much everything suppressing warning when ./configure is run without library supression arguments, such as no-gif.
-
 ** How do I build Emacs?
 I have provided [[file:howto.org][documentation]] of how it can be done.
 
 ** Where is a [your favorite platform] binaries?
-While I actually compile my own Emacs for Linux and Mac OS X, I don't provide them. Most Linux distributions have someone packaging Emacs for their package managers. For Mac OS X, there's an existing effort for [[http://emacsformacosx.com/][binary distribution]].
+While I actually compile my own Emacs for Linux and Mac OS X, I don't necessary provide binaries for all of them. Most Linux distributions have someone packaging Emacs for their package managers. For Mac OS X, there's an existing effort for [[http://emacsformacosx.com/][binary distribution]].
 
-*** Future plans
-Currently, a build for [[http://www.raspberrypi.org/][Raspberry Pi]] is being considered.
 
 ** Where's that splash screen?
 You mean [[https://plus.google.com/103005664980673293345/posts/DzmihL834mt][this]]? It's not included. You have to make your own -- look up "fancy splash" in the Customization.
