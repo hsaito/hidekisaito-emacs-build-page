@@ -50,7 +50,7 @@ Not much. It's probably quite identical to the official binary released by the [
 
 *** How do I spot the difference?
 #+CAPTION: A screenshot from the build (as of 24.3)
-#+ATTR_HTML: class="screenshot" alt="A screenshot from the build (as of 24.3)" title="A screenshot from the build (as of 24.3)" style="width: 650px; height: 696px;"
+#+ATTR_HTML: class="screenshot" alt="A screenshot from the build (as of 24.3)" title="A screenshot from the build (as of 24.3)" style="height: 650px; width: 696px;"
 [[file:emacsshot.png]]
 
 If you are using Hideki Saito's Emacs Builds, you will see it is built on one of the following machine:
