@@ -92,7 +92,7 @@ You mean [[https://plus.google.com/103005664980673293345/posts/DzmihL834mt][this
 
 * About Hideki Saito
 ** Who is Hideki Saito?
-See [[https://plus.google.com/+HidekiSaito/][my Google+ page]]
+See [[https://plus.google.com/+HidekiSaito?rel=author][my Google+ page]]
 ** What Hideki's most favorite things about Emacs?
 I've prepared [[file:emacs.org][an essay]] about it. Check it out!
 
