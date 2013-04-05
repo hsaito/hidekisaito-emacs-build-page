@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Emacs Articles</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="title" content="Emacs Articles"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2013-04-04T21:48-0700"/>
+<meta name="author" content="Hideki Saito"/>
+<meta name="description" content="Selected articles about Emacs by Hideki Saito"/>
+<meta name="keywords" content="Emacs, article, opinion, essay, software "/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  {margin-left:auto; margin-right:0px;  text-align:right;}
+  .left   {margin-left:0px;  margin-right:auto; text-align:left;}
+  .center {margin-left:auto; margin-right:auto; text-align:center;}
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top;  }
+  th.right  { text-align:center;  }
+  th.left   { text-align:center;   }
+  th.center { text-align:center; }
+  td.right  { text-align:right;  }
+  td.left   { text-align:left;   }
+  td.center { text-align:center; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  div.inlinetask {
+    padding:10px;
+    border:2px solid gray;
+    margin:10px;
+    background: #ffffcc;
+  }
+  textarea { overflow-x: auto; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-114515-36', 'hclippr.org');
+ga('send', 'pageview');
+
+</script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+
+</head>
+<body>
+<div id="org-div-home-and-up" style="text-align:right;font-size:70%;white-space:nowrap;">
+ <a accesskey="h" href="index.html"> UP </a>
+ |
+ <a accesskey="H" href="index.html"> HOME </a>
+</div>
+
+<div id="preamble">
+
+</div>
+
+<div id="content">
+<h1 class="title">Emacs Articles</h1>
+
+
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">Org-mode at Sakura-Con</a></li>
+<li><a href="#sec-2">Org-mode and Why You Should Consider Using It</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1">Org-mode at Sakura-Con</h2>
+<div class="outline-text-2" id="text-1">
+
+<p>This article explains use of <a href="http://www.orgmode.org/">Org-mode</a> in a context of convention management.
+</p>
+
+</div>
+
+<div id="outline-container-1-1" class="outline-3">
+<h3 id="sec-1-1">Who am I?</h3>
+<div class="outline-text-3" id="text-1-1">
+
+<p>I am Japanese Guest Manager appointed by relations department of <a href="http://www.sakuracon.org/">Sakura-Con</a> 2012. My duty at Sakura-Con involves management of Japanese guests of honor for Sakura-Con 2012; everything related to Japanese guests, from schedule managements, human resources, to the field management of the team consisting of a little less than 30 managing 17 guests of honor and their associates &ndash; about 60 in total. The team consists of Japanese guest liaisons assigned to each guest as well as 3 of event interpreters assigned to events such as panels.
+</p>
+<p>
+The team managed more than 80 hours of programming spanning three days as well as times outside of convention hours.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1-2" class="outline-3">
+<h3 id="sec-1-2">Objective</h3>
+<div class="outline-text-3" id="text-1-2">
+
+<p>Managing Japanese guest relations at Sakura-Con involved multiple considerations. Here are some aspects of such managements:
+</p>
+<p>
+Sakura-Con used its own scheduling system, which is mainly used to schedule events on the global calendar, thus making it possible to coordinate scheduling between multiple departments. You can imagine this as a big conference room scheduling system. Unfortunately, the way the schedule is presented and solely chronological and was very hard to glance. (It was better designed to see what time tables are open but not designed to follow what each resource are assigned for.) Japanese guest relations required customized solution as we had to need of further digesting this information.
+</p>
+<p>
+Japanese guest relations issues schedule sheet which consists of formatted schedule for each guest of honor as well as staff. This process was assigned to one of my staff, however this had to be handled somewhat concurrently while schedules were being finalized.
+</p>
+<p>
+Aside from liaisons, Japanese guest interpreters had their own assignment. It is because they were assigned to events rather than guests. This presents interpreters different set of requirements in their scheduling. As the schedule called for many events concurrently occurring but greatest number of such concurrency were constrained by available resources. This also had to be updated on the fly when pertinent changes occur in the scheduling process.
+</p>
+<p>
+Sakura-Con 2012 particularly hired many new staff due to its number of guests. Each of member had to be accounted for their availability for as well as number of "checklist" for signing them up.
+</p>
+<p>
+Each staff is assigned to guest to manage. Assignments are done taking their ability in account as well as their preferences.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1-3" class="outline-3">
+<h3 id="sec-1-3">Management Using Org-mode</h3>
+<div class="outline-text-3" id="text-1-3">
+
+<p>During the preparation of Sakura-Con 2012, there were so many type of information to process. Because Org-mode allows variety of output from its org file, it helped to produce output necessary for consumption by our staff.
+</p>
+<p>
+Schedules had to be constructed so it is easy to glance as well as to have detailed information within. To carry out this, under heading for each guest, information contained table of events, which contained name of the event as well as time (with inactive timestamps) and venue. I can then sort this table based on the time, which generates chronological time table to each guest.
+</p>
+<p>
+Furthermore, the list required some more information, therefore, it would contain subheading which lists each event by its type, but alphabetically for easy lookup.
+This heading had active timestamp. This allowed each of those entry to be exported as iCal calendar file; this file can then be used by interpreters to schedule their assignment.
+</p>
+<p>
+The following is the sample segment from the real schedule: (Due to confidentiality issues, some of information from the example are eradicated and does not show real schedule of the convention.)
+</p>
+
+<div class="figure">
+<p><img src="org-mode-at-sakura-con-schedule.png" class="screenshot" alt="Example of the schedule entry" title="Example of the schedule entry" style="width: 90%; height: 90%;" /></p>
+<p>Example of the schedule entry</p>
+</div>
+
+<p>
+Yes, this is probably redundant having two representation of same event, but given calendar output from table seems to be not possible, this was a middle ground I had to reach.
+Also having these sectional event subheading means they could be marked with various TODO field. I used this feature to label status of each event to signifying events still requiring changes.
+</p>
+<p>
+From this file, I could derive HTML output for printed schedule as well as calendar file for interpreter schedules.
+</p>
+<p>
+Other than some errors originating from input mistakes, the process supported the preparation effort very well.
+</p>
+<p>
+When the convention added a guest, it involved multitude of process, such as guest invitations. These were managed using mainly by checkbox on Org-mode, among with relevant information linked to. Again, all those information could be converted to HTML and other format for sharing.
+</p>
+<p>
+Staffs are managed same way as guests, except they had different type of checklist. Their contact information as well as interview processes were logged and amended as the process continued. Staff directory was also published utilizing same data compiled in this process.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1-4" class="outline-3">
+<h3 id="sec-1-4">The Team Website</h3>
+<div class="outline-text-3" id="text-1-4">
+
+<p>Utilizing same data set above, the team website containing guest schedules, staff information as well other miscellaneous information could be produced and maintained very rapidly. Utilizing smartphones browser, everything from guest schedule to assignment information could be referenced everywhere there are coverages. While being static site, onsite update to the contents were very simple. Backend featured <a href="http://www.git-scm.com/">Git</a> and new revision could be pushed to update the site from local machine. This was mainly done by a laptop with <a href="http://www.clear.com/">Clear</a> hotspot. I have also designed emergency USB thumbdrive which contains all the necessary tools (including complete version of Emacs, SSH, Git, etc.) which could be used to continue updating the site in the event that laptop would be out of order. Fortunately, I did not have to resort to use it.
+</p>
+<p>
+The team website was not only utilized by the team itself, but its reference was expanded to entire department as well as relevant personnel outside of the department, logging more than 3500 requests on the convention week alone, which would have been additional inquiry to the department otherwise.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1-5" class="outline-3">
+<h3 id="sec-1-5">Future Considerations</h3>
+<div class="outline-text-3" id="text-1-5">
+
+<p>Org-mode was an integral part of Japanese Guest Relations at Sakura-Con 2012. While model based on static webpage has worked very well for the purpose, perhaps I can perhaps develop or utilize frameworks that can parse org file input to generate format better fit for many of use cases.
+</p>
+<p>
+Also mobile integration utilizing tools such as MobileOrg was not within the scope of the project, this is certainly something I will want to explore in the future.
+</p>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2" class="outline-2">
+<h2 id="sec-2">Org-mode and Why You Should Consider Using It</h2>
+<div class="outline-text-2" id="text-2">
+
+<p><a href="http://www.orgmode.org/">Org-mode</a> is certainly best one of many things I've discovered in first 2 months in 2012. Now I use it for anything from note taking, <a href="http://www.sakuracon.org/">convention</a> management, and even writing full report.
+</p>
+<p>
+This was great discovery to me, that recently, I have been started a lot of things on the web as well as on more specialized platforms such as <a href="http://www.google.com/intl/en/chromebook/">Chromebook</a> rather than on traditional PC. Sure I will have to use some type of computer to convert document prepared in Org-mode, more about it later.
+</p>
+
+</div>
+
+<div id="outline-container-2-1" class="outline-3">
+<h3 id="sec-2-1">Binary Blobs Suck</h3>
+<div class="outline-text-3" id="text-2-1">
+
+<p>I have been complaining about various binary blobs in the past. I expressed my hate anything from proprietary format, as well as winmail.dat attached to E-mails. (I'm still seeing that, albeit less often. Hey Microsoft, if you are seeing it push some Windows Update to everyone and get rid of that thing altogether.)
+</p>
+<p>
+Classic examples are documents generated by any office softwares traditionally had this problem. It started to improve when standardization efforts such as OpenDocument and some sense <a href="http://www.ecma-international.org/publications/standards/Ecma-376.htm">Office Open XML</a> are introduced in the market. This may have changed significantly in standardized to approach to otherwise proprietary formats that was (and still is) dominating the market, was was very important movement.
+</p>
+<p>
+However, what these standardization efforts did not solve was accessibility problem. No matter how open those formats are, they would still require use of some extra piece of software, that requires degree of complexity than what you could attain using plain text. TeX (and LaTeX) has been around for years allowing plain text edit, but it was far harder to use than, although, I consider TeX/LaTeX being 100 times better way of creating documents than on Microsoft Word.
+</p>
+<p>
+Org-mode being plain text, I can be editing the document everywhere: I can do it on PC, I can do it on Mac, I can do it on Chromebook (considering ChromeOS does not have any software packages it is bit cranky to do it with) and I can do it on my phone. Eventually, I will be relying on actual PC to convert, but being able to write documents is very useful aspect of Org-mode and mark up languages in general.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-2-2" class="outline-3">
+<h3 id="sec-2-2">Structured Documents Made Easy</h3>
+<div class="outline-text-3" id="text-2-2">
+
+<p>One thing I like about Org-mode (and also TeX/LaTeX) is that it enforces structured documents. I often across many documents E-mail to me that are horribly created document – heading being mere font size change, table of contents written as text, rather than auto generated based on heading information, because it lacks document structure information because of the above.
+</p>
+<p>
+Sure some people are apparently smart enough to do this properly even when they are using <a href="http://office.microsoft.com/en-us/word/">Microsoft Word</a>, but the point is that Org-mode enforces this with positive motivation. By making sure the document has proper format on Org-mode, it makes Org-mode much more useful, as it is outline processor, you will be able to organize contents more efficiently when it is structured.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-2-3" class="outline-3">
+<h3 id="sec-2-3">Project Management Made Easy</h3>
+<div class="outline-text-3" id="text-2-3">
+
+<p>Most of things I do at my work is project management. I used to use <a href="http://www.microsoft.com/project/en-us/project-management.aspx">Microsoft Project</a>, which after I've used it for while, I found it wasn't necessary solution to the problem. Yes, it is perhaps good at making graph that wows management in some companies, but constraints it assume is not always in-line with real life situation. Unless you are working for perfect company, schedule slips, requirements change, which causes heck of changes to the beautiful chart you've made using those project management softwares.
+</p>
+<p>
+Past few days, I have been working on adjusting events which involves around 80 hours of sessions – Org-mode helped this process such a breeze, because getting the big picture of dependencies was very easy with Org-mode.
+</p>
+<p>
+And what best, is that reports can be generated to number of format for others to review, which is my next point:
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-2-4" class="outline-3">
+<h3 id="sec-2-4">Document Creation Made Easy</h3>
+<div class="outline-text-3" id="text-2-4">
+
+<p>Once authoring of the document is completed on Org-mode, it is very easy to generate reports for others to consume. Be it HTML, OpenDocument, LaTeX, etc., all it involve is to export as those format.
+</p>
+<p>
+It is even possible to create table contains dynamically generated field, much like you can do in <a href="http://office.microsoft.com/en-us/excel/">Microsoft Excel</a>. It's like text based spreadsheet.
+</p>
+<p>
+This creates seamless pipeline of information management to document creation based on it.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-2-5" class="outline-3">
+<h3 id="sec-2-5">Shortcomings?</h3>
+<div class="outline-text-3" id="text-2-5">
+
+<p>It is fair to say there are some shortcoming to Org-mode. For example, it is harder to embed diagrams on the document. (It's not impossible, but the diagrams need to be created externally.) Documents involving heavy use of diagram and drawing are much better done in applications like <a href="http://office.microsoft.com/en-us/powerpoint/">Microsoft Powerpoint</a>, <a href="http://office.microsoft.com/en-us/visio/">Microsoft Visio</a>, or <a href="http://www.libreoffice.org/">LibreOffice Draw</a>. (And please don't do it on <a href="http://hideki.hclippr.com/2009/11/16/using-microsoft-excel-as-word-processor-you-bet/">Microsoft Excel!</a>) Other than that, Org-mode is very good all-round information management and document authoring tool.
+</p></div>
+</div>
+</div>
+</div>
+
+<div id="postamble">
+<p class="date">Date: 2013-04-04T21:48-0700</p>
+<p class="author">Author: Hideki Saito</p>
+<p class="creator"><a href="http://orgmode.org">Org</a> version 7.9.4 with <a href="http://www.gnu.org/software/emacs/">Emacs</a> version 24</p>
+<a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>
+
+</div>
+</body>
+</html>

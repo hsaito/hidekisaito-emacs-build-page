@@ -18,9 +18,7 @@ body {
   box-shadow: 0 0 5px 5px #006000;
 }
 
-#emacs_screenshot {
-  width: 650px;
-  height: 696px;
+.screenshot {
   -moz-border-radius: 5px;
   border-radius: 5px;
   -moz-box-shadow: 5px 5px 5px black;
