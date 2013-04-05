@@ -59,7 +59,7 @@ Not much. It's probably quite identical to the official binary released by the [
 
 *** How do I spot the difference?
 #+CAPTION: A screenshot from the build (as of 24.3)
-#+ATTR_HTML: id="emacs_screenshot" alt="A screenshot from the build (as of 24.3)" title="A screenshot from the build (as of 24.3)"
+#+ATTR_HTML: class="screenshot" alt="A screenshot from the build (as of 24.3)" title="A screenshot from the build (as of 24.3)" style="height: 650px; width: 696px;"
 [[file:emacsshot.png]]
 
 If you are using Hideki Saito's Emacs Builds, you will see it is built on one of the following machine:
@@ -124,6 +124,9 @@ See [[https://plus.google.com/+HidekiSaito?rel=author][my Google+ page]]
 ** What Hideki's most favorite things about Emacs?
 I've prepared [[file:emacs.org][an essay]] about it. Check it out!
 
+
+* Further Readings
+- [[file:articles.org][Emacs Articles]]
 
 * Other links
 - [[http://www.gnu.org/software/emacs/][GNU Emacs]] at [[http://www.fsf.org/][Free Software Foundation]]
