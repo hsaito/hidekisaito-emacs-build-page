@@ -3,7 +3,7 @@
 #+AUTHOR:    Hideki Saito
 #+EMAIL:     hidekis@gmail.com
 #+DESCRIPTION: Emacs Builds prepared by Hideki Saito
-#+KEYWORDS: Emacs, software, OSS, compile, build, Windows 
+#+KEYWORDS: Emacs, software, OSS, compile, build, binaries
 #+STYLE: <link rel="stylesheet" type="text/css" href="style.css" />
 #+STYLE: <script type="text/javascript">
 #+STYLE:   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -18,6 +18,7 @@
 #+LANGUAGE:  en
 #+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
 #+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+OPTIONS: ^:{}
 #+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
 #+EXPORT_SELECT_TAGS: export
 #+EXPORT_EXCLUDE_TAGS: noexport
@@ -25,16 +26,24 @@
 #+LINK_HOME: 
 #+XSLT:
 
-This site provides a precompiled build of Emacs prepared by Hideki Saito. (Currently for Windows)
+This site provides a precompiled build of Emacs prepared by Hideki Saito.
 
 * Download
 Current version: *24.3*
 
 ** Binaries
 Use the following link to download the build:
+*** Windows
 - [[file:emacs-24.3-bin-i386-hs.zip][Emacs Build]] and its [[file:emacs-24.3-bin-i386-hs.zip.sig][signature file]]
 - [[file:emacs-24.3-barebin-i386-hs.zip][Emacs Barebin Build]] and its [[file:emacs-24.3-barebin-i386-hs.zip.sig][signature file]] (mostly useful for upgrading)
 - [[file:xpm4.dll][XPM library]] and its [[file:xpm4.dll.sig][signature]] (This is provided here as lack of this file will affect correct rendering of toolbar and such.)
+
+*** Linux (Experimental)
+- [[file:emacs-24.3-linux-bin-x86_64-hs.tar.gz][Emacs binary tarball]] and its [[file:emacs-24.3-linux-bin-x86_64-hs.tar.gz.sig][signature file]] (for x86_64)
+- x86 32-bit version coming soon.
+
+*** Mac
+- [[file:Emacs-24_3-hs.dmg][Emacs build dmg disk image]] and its [[file:Emacs-24_3-hs.dmg.sig][signature file]]
 
 ** Source files
 - [[file:emacs-24.3.tar.gz][Emacs Source]] and its [[file:emacs-24.3.tar.gz.sig][signature]] signed by the official distribution.
@@ -55,10 +64,11 @@ Not much. It's probably quite identical to the official binary released by the [
 
 If you are using Hideki Saito's Emacs Builds, you will see it is built on one of the following machine:
 
-- MIO
-- MADOKA
-- SAYAKA
-- NANOHA
+- MIO (Windows 7)
+- MADOKA (Linux x86_64)
+- SAYAKA (Linux x86_64)
+- NANOHA (Linux x86)
+- hidekimac (Mac)
 
 Unless somehow cross compiled, it should typically say it is built on /MIO/ but is subject to change. (This is where the official binary would say /MARVIN/.)
 A binary package will also be signed using OpenPGP key AFF2E40B.
@@ -66,10 +76,19 @@ A binary package will also be signed using OpenPGP key AFF2E40B.
 ** Will it be the latest version?
 As long as my interest and compilation environment lasts. I'm moving toward [[http://www.linux.org/][Linux]] these days, and thus, it is possible my self-interest of having self-compiled version of Emacs for Windows will be gone once the transition is complete.
 
-** Which Windows version does it support?
-It is tested on Windows 7. It should run on most of modern, but older Windows NT based platforms (i.e. Windows XP) without much issue, too. It will be probably difficult to run on Windows 9x operating systems. It should also run on newer Windows such as Windows 8, but I have not tested, and currently do not have any plans to test on the platform. You are more than welcome to try on any of platforms, but as the GPL says, there is "NO WARRANTY FOR THE PROGRAM" and rightly so.
+** Which operating systems does it support?
+These are general guideline as I have not tested on every platform other than the one I have compiled on. You are more than welcome to try on any of platforms, but as the GPL says, there is "NO WARRANTY FOR THE PROGRAM" and rightly so.
+*** Windows
+It is built and tested on Windows 7. It should run on most of modern, but older Windows NT based platforms (i.e. Windows XP) without much issue, too. It will be probably difficult to run on Windows 9x operating systems. It should also run on newer Windows such as Windows 8, but I have not tested, and currently do not have any plans to test on the platform.
+
+*** Mac
+Built and tested on 10.8. May run on earlier version.
+
+*** Linux
+Built and tested on Ubuntu 12.10 with Linux 3.5.0 kernel.
 
 ** Which library does it include?
+*** For Windows
 This distribution is compiled to support all the libraries made available to be supported on Emacs on Windows. Having said that, you will need to download appropriate library to use those features.
 
 - [[http://gnuwin32.sourceforge.net/packages/libpng.htm][LibPng]]
@@ -79,11 +98,20 @@ This distribution is compiled to support all the libraries made available to be 
 - [[http://www.zlatkovic.com/libxml.en.html][LibXml]]
 - [[http://www.gnutls.org/][GnuTLS]]
 
+*** For Mac
+The distribution should satisfy every dependencies.
+
+*** For Linux
+Pretty much everything suppressing warning when ./configure is run without library supression arguments, such as no-gif.
+
 ** How do I build Emacs?
-It is bit complicated process, but I have provided [[file:howto.org][documentation]] of how it can be done.
+I have provided [[file:howto.org][documentation]] of how it can be done.
 
 ** Where is a [your favorite platform] binaries?
 While I actually compile my own Emacs for Linux and Mac OS X, I don't provide them. Most Linux distributions have someone packaging Emacs for their package managers. For Mac OS X, there's an existing effort for [[http://emacsformacosx.com/][binary distribution]].
+
+*** Future plans
+Currently, a build for [[http://www.raspberrypi.org/][Raspberry Pi]] is being considered.
 
 ** Where's that splash screen?
 You mean [[https://plus.google.com/103005664980673293345/posts/DzmihL834mt][this]]? It's not included. You have to make your own -- look up "fancy splash" in the Customization.

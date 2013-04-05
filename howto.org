@@ -25,17 +25,18 @@
 #+LINK_HOME: index.html
 #+XSLT:
 
-* Getting files
-** Source
+* Windows
+** Getting files
+*** Source
 Get the tarball from [[http://www.gnu.org/software/emacs/][GNU Emacs]] page.
-** Build Tools
+*** Build Tools
 You will need some build tools. [[http://www.mingw.org/][MinGW]] provides tools you need in order to compile Emacs. Specifically, you need *make* and *gcc* tools from MinGW.
 
 The *makeinfo* tool from [[http://gnuwin32.sourceforge.net/packages/texinfo.htm][TexInfo]] is also required.[fn::I found that the latest version of TexInfo crashes while processing Emacs files -- you may want [[http://sourceforge.net/projects/gnuwin32/files/texinfo/4.8/][4.8]] instead.]
 
 The [[http://gnuwin32.sourceforge.net/packages/coreutils.htm][CoreUtils]] provides many of required tools, so install it, too.
 
-** Dependencies
+*** Dependencies
 In addition, you may want to install the following dependencies. Using setup application is far easier way of handling this.
 - [[http://gnuwin32.sourceforge.net/packages/libpng.htm][LibPng]]
 - [[http://gnuwin32.sourceforge.net/packages/jpeg.htm][Jpeg]]
@@ -45,8 +46,8 @@ In addition, you may want to install the following dependencies. Using setup app
 - [[http://www.gnutls.org/][GnuTLS]]
 - [[http://gnuwin32.sourceforge.net/packages/xpm.htm][XPM]]
 
-* Compile Procedures
-** Configuring
+** Compile Procedures
+*** Configuring
 First, go to /nt/ directory within the uncompressed Emacs source file.
 
 Before proceeding, temporarily turn off your malware scanners. Yes, I meant it. Some of stricter malware scanners cause false alarm while building Emacs and can cause the build process to fail. 
@@ -56,7 +57,7 @@ Issue the following command where /path-to-dependency-includes/ being place of y
 =configure.bat --with-gcc --cflags -I /path-to-dependency-includes/=
 #+END_QUOTE
 
-** Build
+*** Build
 The following command will make the build
 
 
@@ -71,6 +72,12 @@ The following command will then make distribution file.[fn::You will need /7z.ex
 =make dist=
 #+END_QUOTE 
 
-* Other Information
+** Other Information
 - [[http://ourcomments.org/Emacs/w32-build-emacs.html][Building Emacs on MS Windows]], although based on the older Emacs distributions, many of parts are still pertinent.
 - The /INSTALL/ file within /nt/ directory inside Emacs source titled /Building and Installing Emacs on Windows (from 95 to 7 and beyond)/ explains details about building process.
+
+* Linux
+Coming soon
+
+* Mac
+Coming soon

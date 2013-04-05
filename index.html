@@ -7,10 +7,10 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
 <meta name="title" content="Hideki Saito's Emacs Builds"/>
 <meta name="generator" content="Org-mode"/>
-<meta name="generated" content="2013-04-04T19:15-0700"/>
+<meta name="generated" content="2013-04-05T13:32-0700"/>
 <meta name="author" content="Hideki Saito"/>
 <meta name="description" content="Emacs Builds prepared by Hideki Saito"/>
-<meta name="keywords" content="Emacs, software, OSS, compile, build, Windows "/>
+<meta name="keywords" content="Emacs, software, OSS, compile, build, binaries"/>
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
   html { font-family: Times, serif; font-size: 12pt; }
@@ -128,7 +128,7 @@ for the JavaScript code in this tag.
 <div id="content">
 <h1 class="title">Hideki Saito's Emacs Builds</h1>
 
-<p>This site provides a precompiled build of Emacs prepared by Hideki Saito. (Currently for Windows)
+<p>This site provides a precompiled build of Emacs prepared by Hideki Saito.
 </p>
 
 <div id="outline-container-1" class="outline-2">
@@ -145,7 +145,14 @@ for the JavaScript code in this tag.
 <div class="outline-text-3" id="text-1-1">
 
 <p>Use the following link to download the build:
-</p><ul>
+</p>
+</div>
+
+<div id="outline-container-1-1-1" class="outline-4">
+<h4 id="sec-1-1-1">Windows</h4>
+<div class="outline-text-4" id="text-1-1-1">
+
+<ul>
 <li><a href="emacs-24.3-bin-i386-hs.zip">Emacs Build</a> and its <a href="emacs-24.3-bin-i386-hs.zip.sig">signature file</a>
 </li>
 <li><a href="emacs-24.3-barebin-i386-hs.zip">Emacs Barebin Build</a> and its <a href="emacs-24.3-barebin-i386-hs.zip.sig">signature file</a> (mostly useful for upgrading)
@@ -155,6 +162,37 @@ for the JavaScript code in this tag.
 </ul>
 
 
+</div>
+
+</div>
+
+<div id="outline-container-1-1-2" class="outline-4">
+<h4 id="sec-1-1-2">Linux (Experimental)</h4>
+<div class="outline-text-4" id="text-1-1-2">
+
+<ul>
+<li><a href="emacs-24.3-linux-bin-x86_64-hs.tar.gz">Emacs binary tarball</a> and its <a href="emacs-24.3-linux-bin-x86_64-hs.tar.gz.sig">signature file</a> (for x86_64)
+</li>
+<li>x86 32-bit version coming soon.
+</li>
+</ul>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-1-1-3" class="outline-4">
+<h4 id="sec-1-1-3">Mac</h4>
+<div class="outline-text-4" id="text-1-1-3">
+
+<ul>
+<li><a href="Emacs-24_3-hs.dmg">Emacs build dmg disk image</a> and its <a href="Emacs-24_3-hs.dmg.sig">signature file</a>
+</li>
+</ul>
+
+
+</div>
 </div>
 
 </div>
@@ -217,13 +255,15 @@ for the JavaScript code in this tag.
 If you are using Hideki Saito's Emacs Builds, you will see it is built on one of the following machine:
 </p>
 <ul>
-<li>MIO
+<li>MIO (Windows 7)
 </li>
-<li>MADOKA
+<li>MADOKA (Linux x86_64)
 </li>
-<li>SAYAKA
+<li>SAYAKA (Linux x86_64)
 </li>
-<li>NANOHA
+<li>NANOHA (Linux x86)
+</li>
+<li>hidekimac (Mac)
 </li>
 </ul>
 
@@ -248,11 +288,40 @@ A binary package will also be signed using OpenPGP key AFF2E40B.
 </div>
 
 <div id="outline-container-2-4" class="outline-3">
-<h3 id="sec-2-4">Which Windows version does it support?</h3>
+<h3 id="sec-2-4">Which operating systems does it support?</h3>
 <div class="outline-text-3" id="text-2-4">
 
-<p>It is tested on Windows 7. It should run on most of modern, but older Windows NT based platforms (i.e. Windows XP) without much issue, too. It will be probably difficult to run on Windows 9x operating systems. It should also run on newer Windows such as Windows 8, but I have not tested, and currently do not have any plans to test on the platform. You are more than welcome to try on any of platforms, but as the GPL says, there is "NO WARRANTY FOR THE PROGRAM" and rightly so.
+<p>These are general guideline as I have not tested on every platform other than the one I have compiled on. You are more than welcome to try on any of platforms, but as the GPL says, there is "NO WARRANTY FOR THE PROGRAM" and rightly so.
 </p>
+</div>
+
+<div id="outline-container-2-4-1" class="outline-4">
+<h4 id="sec-2-4-1">Windows</h4>
+<div class="outline-text-4" id="text-2-4-1">
+
+<p>It is built and tested on Windows 7. It should run on most of modern, but older Windows NT based platforms (i.e. Windows XP) without much issue, too. It will be probably difficult to run on Windows 9x operating systems. It should also run on newer Windows such as Windows 8, but I have not tested, and currently do not have any plans to test on the platform.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-2-4-2" class="outline-4">
+<h4 id="sec-2-4-2">Mac</h4>
+<div class="outline-text-4" id="text-2-4-2">
+
+<p>Built and tested on 10.8. May run on earlier version.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-2-4-3" class="outline-4">
+<h4 id="sec-2-4-3">Linux</h4>
+<div class="outline-text-4" id="text-2-4-3">
+
+<p>Built and tested on Ubuntu 12.10 with Linux 3.5.0 kernel.
+</p>
+</div>
 </div>
 
 </div>
@@ -260,6 +329,13 @@ A binary package will also be signed using OpenPGP key AFF2E40B.
 <div id="outline-container-2-5" class="outline-3">
 <h3 id="sec-2-5">Which library does it include?</h3>
 <div class="outline-text-3" id="text-2-5">
+
+
+</div>
+
+<div id="outline-container-2-5-1" class="outline-4">
+<h4 id="sec-2-5-1">For Windows</h4>
+<div class="outline-text-4" id="text-2-5-1">
 
 <p>This distribution is compiled to support all the libraries made available to be supported on Emacs on Windows. Having said that, you will need to download appropriate library to use those features.
 </p>
@@ -283,11 +359,32 @@ A binary package will also be signed using OpenPGP key AFF2E40B.
 
 </div>
 
+<div id="outline-container-2-5-2" class="outline-4">
+<h4 id="sec-2-5-2">For Mac</h4>
+<div class="outline-text-4" id="text-2-5-2">
+
+<p>The distribution should satisfy every dependencies.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-2-5-3" class="outline-4">
+<h4 id="sec-2-5-3">For Linux</h4>
+<div class="outline-text-4" id="text-2-5-3">
+
+<p>Pretty much everything suppressing warning when ./configure is run without library supression arguments, such as no-gif.
+</p>
+</div>
+</div>
+
+</div>
+
 <div id="outline-container-2-6" class="outline-3">
 <h3 id="sec-2-6">How do I build Emacs?</h3>
 <div class="outline-text-3" id="text-2-6">
 
-<p>It is bit complicated process, but I have provided <a href="howto.html">documentation</a> of how it can be done.
+<p>I have provided <a href="howto.html">documentation</a> of how it can be done.
 </p>
 </div>
 
@@ -299,6 +396,16 @@ A binary package will also be signed using OpenPGP key AFF2E40B.
 
 <p>While I actually compile my own Emacs for Linux and Mac OS X, I don't provide them. Most Linux distributions have someone packaging Emacs for their package managers. For Mac OS X, there's an existing effort for <a href="http://emacsformacosx.com/">binary distribution</a>.
 </p>
+
+</div>
+
+<div id="outline-container-2-7-1" class="outline-4">
+<h4 id="sec-2-7-1">Future plans</h4>
+<div class="outline-text-4" id="text-2-7-1">
+
+<p>Currently, a build for <a href="http://www.raspberrypi.org/">Raspberry Pi</a> is being considered.
+</p>
+</div>
 </div>
 
 </div>
@@ -360,7 +467,7 @@ A binary package will also be signed using OpenPGP key AFF2E40B.
 </div>
 
 <div id="postamble">
-<p class="date">Date: 2013-04-04T19:15-0700</p>
+<p class="date">Date: 2013-04-05T13:32-0700</p>
 <p class="author">Author: Hideki Saito</p>
 <p class="creator"><a href="http://orgmode.org">Org</a> version 7.9.4 with <a href="http://www.gnu.org/software/emacs/">Emacs</a> version 24</p>
 <a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>
