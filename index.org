@@ -44,7 +44,7 @@ Use the following link to download the build:
 *** Linux
 Linux precompiled binary was attempted, however, handling of shared library makes it unpractical unless it is coupled with a package manager which can automatically satisfy dependencies, which I will not be committing at this point. Precompiled binaries on Linux will require every dependant shared libraries to exist in the system (and won't even run without them, whether you are using it or not) therefore, to provide /out of the box/ experience with Linux will require every dependencies to be packed into the binary, which is is not very realistic. 
 
-Since making users going through mess of installing dependencies just to run this build is as bad as having them get tools required to compile an then compile one themselves. (Which is not that complicated on Linux, really.) For users not willing to compile the build themselves can either stick with one bundled with the operating itself, or find third-party package manager who packages latest Emacs for their distributions.
+Since making users going through mess of installing dependencies just to run this build is as bad as having them get tools required to compile and then compile one themselves. (Which is not that complicated on Linux, really.) For users not willing to compile the build themselves can either stick with one bundled with the operating itself, or find third-party package manager who packages latest Emacs for their distributions.
 
 
 ** Source files
