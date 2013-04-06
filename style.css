@@ -18,6 +18,11 @@ body {
   box-shadow: 0 0 5px 5px #006000;
 }
 
+#emacs_screenshot {
+  width: 696px;
+  height: 650px;
+}
+
 .screenshot {
   -moz-border-radius: 5px;
   border-radius: 5px;

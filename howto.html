@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
 <meta name="title" content="How to Build Emacs on Windows"/>
 <meta name="generator" content="Org-mode"/>
-<meta name="generated" content="2013-04-04T19:16-0700"/>
+<meta name="generated" content="2013-04-05T13:29-0700"/>
 <meta name="author" content="Hideki Saito"/>
 <meta name="description" content="Explaining how to build Emacs on Windows"/>
 <meta name="keywords" content="Emacs, software, OSS, compile, build, Windows "/>
@@ -135,24 +135,31 @@ for the JavaScript code in this tag.
 
 
 <div id="outline-container-1" class="outline-2">
-<h2 id="sec-1">Getting files</h2>
+<h2 id="sec-1">Windows</h2>
 <div class="outline-text-2" id="text-1">
 
 
 </div>
 
 <div id="outline-container-1-1" class="outline-3">
-<h3 id="sec-1-1">Source</h3>
+<h3 id="sec-1-1">Getting files</h3>
 <div class="outline-text-3" id="text-1-1">
+
+
+</div>
+
+<div id="outline-container-1-1-1" class="outline-4">
+<h4 id="sec-1-1-1">Source</h4>
+<div class="outline-text-4" id="text-1-1-1">
 
 <p>Get the tarball from <a href="http://www.gnu.org/software/emacs/">GNU Emacs</a> page.
 </p></div>
 
 </div>
 
-<div id="outline-container-1-2" class="outline-3">
-<h3 id="sec-1-2">Build Tools</h3>
-<div class="outline-text-3" id="text-1-2">
+<div id="outline-container-1-1-2" class="outline-4">
+<h4 id="sec-1-1-2">Build Tools</h4>
+<div class="outline-text-4" id="text-1-1-2">
 
 <p>You will need some build tools. <a href="http://www.mingw.org/">MinGW</a> provides tools you need in order to compile Emacs. Specifically, you need <b>make</b> and <b>gcc</b> tools from MinGW.
 </p>
@@ -166,9 +173,9 @@ The <a href="http://gnuwin32.sourceforge.net/packages/coreutils.htm">CoreUtils</
 
 </div>
 
-<div id="outline-container-1-3" class="outline-3">
-<h3 id="sec-1-3">Dependencies</h3>
-<div class="outline-text-3" id="text-1-3">
+<div id="outline-container-1-1-3" class="outline-4">
+<h4 id="sec-1-1-3">Dependencies</h4>
+<div class="outline-text-4" id="text-1-1-3">
 
 <p>In addition, you may want to install the following dependencies. Using setup application is far easier way of handling this.
 </p><ul>
@@ -194,16 +201,16 @@ The <a href="http://gnuwin32.sourceforge.net/packages/coreutils.htm">CoreUtils</
 
 </div>
 
-<div id="outline-container-2" class="outline-2">
-<h2 id="sec-2">Compile Procedures</h2>
-<div class="outline-text-2" id="text-2">
+<div id="outline-container-1-2" class="outline-3">
+<h3 id="sec-1-2">Compile Procedures</h3>
+<div class="outline-text-3" id="text-1-2">
 
 
 </div>
 
-<div id="outline-container-2-1" class="outline-3">
-<h3 id="sec-2-1">Configuring</h3>
-<div class="outline-text-3" id="text-2-1">
+<div id="outline-container-1-2-1" class="outline-4">
+<h4 id="sec-1-2-1">Configuring</h4>
+<div class="outline-text-4" id="text-1-2-1">
 
 <p>First, go to <i>nt</i> directory within the uncompressed Emacs source file.
 </p>
@@ -223,9 +230,9 @@ Issue the following command where <i>path-to-dependency-includes</i> being place
 
 </div>
 
-<div id="outline-container-2-2" class="outline-3">
-<h3 id="sec-2-2">Build</h3>
-<div class="outline-text-3" id="text-2-2">
+<div id="outline-container-1-2-2" class="outline-4">
+<h4 id="sec-1-2-2">Build</h4>
+<div class="outline-text-4" id="text-1-2-2">
 
 <p>The following command will make the build
 </p>
@@ -253,9 +260,9 @@ The following command will then make distribution file.<sup><a class="footref" n
 
 </div>
 
-<div id="outline-container-3" class="outline-2">
-<h2 id="sec-3">Other Information</h2>
-<div class="outline-text-2" id="text-3">
+<div id="outline-container-1-3" class="outline-3">
+<h3 id="sec-1-3">Other Information</h3>
+<div class="outline-text-3" id="text-1-3">
 
 <ul>
 <li><a href="http://ourcomments.org/Emacs/w32-build-emacs.html">Building Emacs on MS Windows</a>, although based on the older Emacs distributions, many of parts are still pertinent.
@@ -265,6 +272,27 @@ The following command will then make distribution file.<sup><a class="footref" n
 </ul>
 
 
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2" class="outline-2">
+<h2 id="sec-2">Linux</h2>
+<div class="outline-text-2" id="text-2">
+
+<p>Coming soon
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-3" class="outline-2">
+<h2 id="sec-3">Mac</h2>
+<div class="outline-text-2" id="text-3">
+
+<p>Coming soon
+</p>
 <div id="footnotes">
 <h2 class="footnotes">Footnotes: </h2>
 <div id="text-footnotes">
@@ -281,7 +309,7 @@ The following command will then make distribution file.<sup><a class="footref" n
 </div>
 
 <div id="postamble">
-<p class="date">Date: 2013-04-04T19:16-0700</p>
+<p class="date">Date: 2013-04-05T13:29-0700</p>
 <p class="author">Author: Hideki Saito</p>
 <p class="creator"><a href="http://orgmode.org">Org</a> version 7.9.4 with <a href="http://www.gnu.org/software/emacs/">Emacs</a> version 24</p>
 <a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>
