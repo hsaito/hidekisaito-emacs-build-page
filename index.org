@@ -25,6 +25,9 @@
 #+LINK_HOME: 
 #+XSLT:
 
+#+ATTR_HTML: alt="Emacs logo" title="Emacs logo" style="height: 250px; width: 250px; text-align: center; float: center;"
+[[file:emacslogo.png]]
+
 This site provides a precompiled build of Emacs prepared by Hideki Saito. (Currently for Windows)
 
 * Download
