@@ -13,3 +13,6 @@ Header append Vary User-Agent env=!dont-vary
     Header append X-UA-Compatible "chrome=1" env=gcf
   </IfModule>
 </IfModule>
+
+ErrorDocument 403 403.html
+ErrorDocument 404 404.html
