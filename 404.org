@@ -28,6 +28,6 @@
 
 Unfortunately, the file you have requested is either not found or not available.
 
-Please visit [[file:/][the top page]] and try again. If you have encountered this error while you are visiting this site from the top page (as opposed to through someone else's link, for example) please [[https://plus.google.com/+HidekiSaito/posts][drop me a note]]!
+Please visit [[http://emacs.hclippr.org][the top page]] and try again. If you have encountered this error while you are visiting this site from the top page (as opposed to through someone else's link, for example) please [[https://plus.google.com/+HidekiSaito/posts][drop me a note]]!
 
 Thank you for visiting /Hideki Saito's Emacs Builds/.
