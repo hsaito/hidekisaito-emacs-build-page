@@ -3,14 +3,14 @@
                "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<title>How to Build Emacs on Windows</title>
+<title>How to Build Emacs on Various Platforms</title>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-<meta name="title" content="How to Build Emacs on Windows"/>
+<meta name="title" content="How to Build Emacs on Various Platforms"/>
 <meta name="generator" content="Org-mode"/>
-<meta name="generated" content="2013-04-05T13:29-0700"/>
+<meta name="generated" content="2013-04-07T02:02-0700"/>
 <meta name="author" content="Hideki Saito"/>
-<meta name="description" content="Explaining how to build Emacs on Windows"/>
-<meta name="keywords" content="Emacs, software, OSS, compile, build, Windows "/>
+<meta name="description" content="Explaining how to build Emacs on various platforms"/>
+<meta name="keywords" content="Emacs, software, OSS, compile, build "/>
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
   html { font-family: Times, serif; font-size: 12pt; }
@@ -131,7 +131,7 @@ for the JavaScript code in this tag.
 </div>
 
 <div id="content">
-<h1 class="title">How to Build Emacs on Windows</h1>
+<h1 class="title">How to Build Emacs on Various Platforms</h1>
 
 
 <div id="outline-container-1" class="outline-2">
@@ -245,6 +245,17 @@ Issue the following command where <i>path-to-dependency-includes</i> being place
 
 
 <p>
+If you choose to do so, you can also compile your own set of compiled Emacs Lisp file. (this step is necessary if you are compiling from version control source &ndash; it is optional if you are using tarball from the official release.) This process will take fairly long time to complete.
+</p>
+<blockquote>
+
+<p><code>make bootstrap</code>
+</p>
+</blockquote>
+
+
+
+<p>
 The following command will then make distribution file.<sup><a class="footref" name="fnr-.2" href="#fn-.2">2</a></sup> I found it easier to just make dist file first then issuing <i>make install</i> &ndash; this way, you can install your Emacs distribution to any places of your choice.
 </p>
 
@@ -281,7 +292,7 @@ The following command will then make distribution file.<sup><a class="footref" n
 <h2 id="sec-2">Linux</h2>
 <div class="outline-text-2" id="text-2">
 
-<p>Coming soon
+<p>Compiling Emacs on Linux is straightforward. Make sure you have gcc and other utilities installed, and then you can issue ./configure, make (or make bootstrap) and then make install.
 </p>
 </div>
 
@@ -291,7 +302,42 @@ The following command will then make distribution file.<sup><a class="footref" n
 <h2 id="sec-3">Mac</h2>
 <div class="outline-text-2" id="text-3">
 
-<p>Coming soon
+<p>Compiling on Mac is fairly easy. You will need to make sure that development tools (gcc, etc.) are downloaded from Apple's site to begin.
+</p>
+<p>
+As Mac OS X is an UNIX system, it is actually possible to compile manner similar to Linux; that is as console and with X11 lib. The binary I am distributing on this site is packaged .app file, and it can be compiled right out from the box as well.
+</p>
+<p>
+Similar to Linux, except when you configure, pass with-ns argument, thus:
+</p>
+<blockquote>
+
+<p><code>./configure --with-ns</code>
+</p>
+</blockquote>
+
+
+<p>
+Then as with Linux, you can make (or make bootstrap) the build.
+</p>
+<p>
+After it is done compiling, you need to make install it.
+</p>
+<blockquote>
+
+<p><code>make install</code>
+</p>
+</blockquote>
+
+
+<p>
+This command will not "install" the build in a sense performed when you do the same on Linux. It creates Emacs.app in <i>nextstep</i> directory.
+</p>
+<p>
+Then you can move this file to <i>Application</i> directory or other favorite directory of your choice and run just like any other Mac applications.
+</p>
+<p>
+Instructions of how to make Mac version of Emacs can be found in <i>INSTALL</i> file within nextstep directory.
 </p>
 <div id="footnotes">
 <h2 class="footnotes">Footnotes: </h2>
@@ -309,7 +355,7 @@ The following command will then make distribution file.<sup><a class="footref" n
 </div>
 
 <div id="postamble">
-<p class="date">Date: 2013-04-05T13:29-0700</p>
+<p class="date">Date: 2013-04-07T02:02-0700</p>
 <p class="author">Author: Hideki Saito</p>
 <p class="creator"><a href="http://orgmode.org">Org</a> version 7.9.4 with <a href="http://www.gnu.org/software/emacs/">Emacs</a> version 24</p>
 <a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>

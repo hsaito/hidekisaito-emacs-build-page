@@ -1,9 +1,9 @@
 # -*- coding: utf-8-unix -*-
-#+TITLE:     How to Build Emacs on Windows
+#+TITLE:     How to Build Emacs on Various Platforms
 #+AUTHOR:    Hideki Saito
 #+EMAIL:     hidekis@gmail.com
-#+DESCRIPTION: Explaining how to build Emacs on Windows
-#+KEYWORDS: Emacs, software, OSS, compile, build, Windows 
+#+DESCRIPTION: Explaining how to build Emacs on various platforms
+#+KEYWORDS: Emacs, software, OSS, compile, build 
 #+STYLE: <link rel="stylesheet" type="text/css" href="style.css" />
 #+STYLE: <script type="text/javascript">
 #+STYLE:   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -65,6 +65,13 @@ The following command will make the build
 =make=
 #+END_QUOTE
 
+If you choose to do so, you can also compile your own set of compiled Emacs Lisp file. (this step is necessary if you are compiling from version control source -- it is optional if you are using tarball from the official release.) This process will take fairly long time to complete.
+
+#+BEGIN_QUOTE
+=make bootstrap=
+#+END_QUOTE
+
+
 The following command will then make distribution file.[fn::You will need /7z.exe/ in the path to this to work.] I found it easier to just make dist file first then issuing /make install/ -- this way, you can install your Emacs distribution to any places of your choice.
 
 
@@ -77,7 +84,29 @@ The following command will then make distribution file.[fn::You will need /7z.ex
 - The /INSTALL/ file within /nt/ directory inside Emacs source titled /Building and Installing Emacs on Windows (from 95 to 7 and beyond)/ explains details about building process.
 
 * Linux
-Coming soon
+Compiling Emacs on Linux is straightforward. Make sure you have gcc and other utilities installed, and then you can issue ./configure, make (or make bootstrap) and then make install.
 
 * Mac
-Coming soon
+Compiling on Mac is fairly easy. You will need to make sure that development tools (gcc, etc.) are downloaded from Apple's site to begin.
+
+As Mac OS X is an UNIX system, it is actually possible to compile manner similar to Linux; that is as console and with X11 lib. The binary I am distributing on this site is packaged .app file, and it can be compiled right out from the box as well.
+
+Similar to Linux, except when you configure, pass with-ns argument, thus:
+
+#+BEGIN_QUOTE
+=./configure --with-ns=
+#+END_QUOTE
+
+Then as with Linux, you can make (or make bootstrap) the build.
+
+After it is done compiling, you need to make install it.
+
+#+BEGIN_QUOTE
+=make install=
+#+END_QUOTE
+
+This command will not "install" the build in a sense performed when you do the same on Linux. It creates Emacs.app in /nextstep/ directory.
+
+Then you can move this file to /Application/ directory or other favorite directory of your choice and run just like any other Mac applications.
+
+Instructions of how to make Mac version of Emacs can be found in /INSTALL/ file within nextstep directory.
