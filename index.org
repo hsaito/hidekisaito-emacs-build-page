@@ -116,10 +116,6 @@ The distribution should satisfy every dependencies.
 ** How do I build Emacs?
 I have provided [[file:howto.org][documentation]] of how it can be done.
 
-** Where is a [your favorite platform] binaries?
-While I actually compile my own Emacs for Linux and Mac OS X, I don't necessary provide binaries for all of them. Most Linux distributions have someone packaging Emacs for their package managers. For Mac OS X, there's an existing effort for [[http://emacsformacosx.com/][binary distribution]].
-
-
 ** Where's that splash screen?
 You mean [[https://plus.google.com/103005664980673293345/posts/DzmihL834mt][this]]? It's not included. You have to make your own -- look up "fancy splash" in the Customization.
 
