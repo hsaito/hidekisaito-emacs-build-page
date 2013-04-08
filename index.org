@@ -135,4 +135,4 @@ I've prepared [[file:emacs.org][an essay]] about it. Check it out!
 - [[http://www.gnu.org/software/emacs/][GNU Emacs]] at [[http://www.fsf.org/][Free Software Foundation]]
 - [[https://github.com/hsaito/hidekisaito-emacs-build-page][Source of this page]] at [[http://www.github.com/][GitHub]]
 * Like what's I'm doing?
-- Bitcoin: 15EK2zSTCWpZqMk8nbZpVe2pEMZt6E3ST3
+- Bitcoin: =15EK2zSTCWpZqMk8nbZpVe2pEMZt6E3ST3=
