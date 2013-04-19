@@ -57,7 +57,7 @@ This heading had active timestamp. This allowed each of those entry to be export
 The following is the sample segment from the real schedule: (Due to confidentiality issues, some of information from the example are eradicated and does not show real schedule of the convention.)
 
 #+CAPTION: Example of the schedule entry
-#+ATTR_HTML: class="screenshot" alt="Example of the schedule entry" title="Example of the schedule entry" style="width: 90%; height: 90%;"
+#+ATTR_HTML: :class screenshot :alt Example of the schedule entry :title Example of the schedule entry :style width: 90%; height: 90%;
 [[file:org-mode-at-sakura-con-schedule.png]]
 
 Yes, this is probably redundant having two representation of same event, but given calendar output from table seems to be not possible, this was a middle ground I had to reach.
