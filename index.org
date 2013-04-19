@@ -75,7 +75,7 @@ Not much. It's probably quite identical to the official binary released by the [
 
 *** How do I spot the difference?
 #+CAPTION: A screenshot from the build (as of 24.3)
-#+ATTR_HTML: class="screenshot" alt="A screenshot from the build (as of 24.3)" title="A screenshot from the build (as of 24.3)" style="height: 650px; width: 696px;"
+#+ATTR_HTML: :class screenshot :alt A screenshot from the build (as of 24.3) :title A screenshot from the build (as of 24.3) :style height: 650px; width: 696px;
 [[file:emacsshot.png]]
 
 If you are using Hideki Saito's Emacs Builds, you will see it is built on one of the following machine:
@@ -121,6 +121,8 @@ I have provided [[file:howto.org][documentation]] of how it can be done.
 You mean [[https://plus.google.com/103005664980673293345/posts/DzmihL834mt][this]]? It's not included. You have to make your own -- look up "fancy splash" in the Customization.
 
 
+** Is this page authored in Emacs, too?
+Of course. Emacs with Org-mode!
 
 * About Hideki Saito
 ** Who is Hideki Saito?
