@@ -1,0 +1,90 @@
+@import url(http://fonts.googleapis.com/css?family=Orbitron:900|Roboto|Electrolize|Source+Code+Pro);
+
+html { font-family: 'Roboto', sans-serif; font-size: 12pt; }
+
+body {
+  background-color: #008000;
+}
+
+#content {
+  background-color: #FFFFFF;
+  padding: 15px;
+  margin: auto;
+  margin-bottom: 30px;
+  text-align: left; 
+  width: 750px; 
+  min-width: 750px; 
+  -moz-box-shadow: 0 0 5px 5px #006000;
+  -webkit-box-shadow: 0 0 5px 5px #006000;
+  box-shadow: 0 0 5px 5px #006000;
+}
+
+#emacs_screenshot {
+  width: 696px;
+  height: 650px;
+}
+
+.screenshot {
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 5px 5px 5px black;
+  -webkit-box-shadow: 5px 5px 5px black;
+  box-shadow: 5px 5px 5px black;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
+li {
+  font-family: 'Roboto', sans-serif;
+}
+
+.title {
+  font-family: 'Orbitron', sans-serif;
+}
+
+.outline-2 {
+  font-family: 'Electrolize', sans-serif;
+}
+
+.outline-3 {
+  font-family: 'Electrolize', sans-serif;
+}
+
+a:link {
+  color: #0000ee;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0000ee;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #800000;
+}
+
+a:active{
+  color: #008000;
+}
+
+#postamble {
+  text-align: center;
+  color: #000000;
+  background-color: #aaffaa;
+  -moz-box-shadow: 0 0 5px 5px #006000;
+  -webkit-box-shadow: 0 0 5px 5px #006000;
+  box-shadow: 0 0 5px 5px #006000;
+}
+
+code {
+  font-family: 'Source Code Pro', sans-serif;
+}
+
+#postamble {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: small;
+}

@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Hideki Saito's Emacs Builds</title>
+<!-- 2013-04-22 Mon 15:52 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="author" content="Hideki Saito"/>
+<meta name="description" content="Emacs Builds prepared by Hideki Saito"/>
+<meta name="keywords" content="Emacs, software, OSS, compile, build, binaries"/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-114515-36', 'hclippr.org');
+ga('send', 'pageview');
+</script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012  Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Hideki Saito's Emacs Builds</h1>
+
+<div class="figure">
+<p><img src="emacslogo.png" alt="Emacs logo" title="Emacs logo" style="height: 250px; width: 250px; float: right;"/></p>
+</div>
+
+<p>
+This site provides a precompiled build of Emacs prepared by Hideki Saito.
+</p>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">What is Emacs?</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+GNU Emacs is an extensible, customizable text editor—and more. At its core is an interpreter for Emacs Lisp, a dialect of the Lisp programming language with extensions to support text editing. The features of GNU Emacs include:
+</p>
+
+<ul class="org-ul">
+<li>Content-sensitive editing modes, including syntax coloring, for a variety of file types including plain text, source code, and HTML.
+</li>
+<li>Complete built-in documentation, including a tutorial for new users.
+</li>
+<li>Full Unicode support for nearly all human languages and their scripts.
+</li>
+<li>Highly customizable, using Emacs Lisp code or a graphical interface.
+</li>
+<li>A large number of extensions that add other functionality, including a project planner, mail and news reader, debugger interface, calendar, and more. Many of these extensions are distributed with GNU Emacs; others are available separately.
+</li>
+</ul>
+
+<p>
+(As described in <a href="http://www.gnu.org/software/emacs/">GNU Emacs</a>)
+</p>
+</div>
+</div>
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">Download</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Current version: <b>24.3</b>
+</p>
+</div>
+
+<div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1">Binaries</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+Use the following link to download the build. You can also see the <a href="files/">list of files</a> provided here.
+</p>
+</div>
+<div id="outline-container-sec-2-1-1" class="outline-4">
+<h4 id="sec-2-1-1">Windows</h4>
+<div class="outline-text-4" id="text-2-1-1">
+<ul class="org-ul">
+<li><a href="files/emacs-24.3-bin-i386-hs.zip">Emacs Build</a> and its <a href="files/emacs-24.3-bin-i386-hs.zip.sig">signature file</a>
+</li>
+<li><a href="files/emacs-24.3-barebin-i386-hs.zip">Emacs Barebin Build</a> and its <a href="files/emacs-24.3-barebin-i386-hs.zip.sig">signature file</a> (mostly useful for upgrading)
+</li>
+<li><a href="files/xpm4.dll">XPM library</a> and its <a href="files/xpm4.dll.sig">signature</a> (This is provided here as lack of this file will affect correct rendering of toolbar and such.)
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-2-1-2" class="outline-4">
+<h4 id="sec-2-1-2">Mac</h4>
+<div class="outline-text-4" id="text-2-1-2">
+<ul class="org-ul">
+<li><a href="files/Emacs-24_3-hs.dmg">Emacs build dmg disk image</a> and its <a href="files/Emacs-24_3-hs.dmg.sig">signature file</a>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-2-1-3" class="outline-4">
+<h4 id="sec-2-1-3">Linux</h4>
+<div class="outline-text-4" id="text-2-1-3">
+<p>
+Linux precompiled binary was attempted, however, handling of shared library makes it unpractical unless it is coupled with a package manager which can automatically satisfy dependencies, which I will not be committing at this point. Precompiled binaries on Linux will require every dependant shared libraries to exist in the system (and won't even run without them, whether you are using it or not) therefore, to provide <i>out of the box</i> experience with Linux will require every dependencies to be packed into the binary, which is is not very realistic. 
+</p>
+
+<p>
+Since making users going through mess of installing dependencies just to run this build is as bad as having them get tools required to compile and then compile one themselves. (Which is not that complicated on Linux, really.) For users not willing to compile the build themselves can either stick with one bundled with the distribution itself, or find third-party package manager who packages latest Emacs for their distributions.
+</p>
+
+<ul class="org-ul">
+<li><a href="https://launchpad.net/~cassou/+archive/emacs">Emacs PPA for Ubuntu</a>
+</li>
+<li><a href="http://packages.debian.org/search?keywords=emacs">For Debian</a>
+</li>
+<li><a href="http://rpmfind.net/linux/rpm2html/search.php?query=emacs">RPMs</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-2-2" class="outline-3">
+<h3 id="sec-2-2">Source files</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li><a href="files/emacs-24.3.tar.gz">Emacs Source</a> and its <a href="files/emacs-24.3.tar.gz.sig">signature</a> signed by the official distribution.
+</li>
+<li><a href="files/xpm-3.5.1-1-src.zip">XPM Library</a> 
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3">About the Build</h2>
+<div class="outline-text-2" id="text-3">
+</div><div id="outline-container-sec-3-1" class="outline-3">
+<h3 id="sec-3-1">What is the license?</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+See <a href="license.html">License Information</a>.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-3-2" class="outline-3">
+<h3 id="sec-3-2">What makes Hideki Saito's Emacs Builds different?</h3>
+<div class="outline-text-3" id="text-3-2">
+<p>
+Not much. It's probably quite identical to the official binary released by the <a href="http://www.gnu.org/software/emacs/">Free Software Foundation</a>. It may come little earlier than the official build.
+</p>
+</div>
+
+<div id="outline-container-sec-3-2-1" class="outline-4">
+<h4 id="sec-3-2-1">How do I spot the difference?</h4>
+<div class="outline-text-4" id="text-3-2-1">
+
+<div class="figure">
+<p><img src="emacsshot.png" class="screenshot" alt="A screenshot from the build (as of 24.3)" title="A screenshot from the build (as of 24.3)" style="height: 666px; width: 696px;"/></p>
+<p>A screenshot from the build (as of 24.3)</p>
+</div>
+
+<p>
+If you are using Hideki Saito's Emacs Builds, you will see it is built on one of the following machine:
+</p>
+
+<ul class="org-ul">
+<li>MIO (Windows 7)
+</li>
+<li>MADOKA (Linux x86_64)
+</li>
+<li>SAYAKA (Linux x86_64)
+</li>
+<li>NANOHA (Linux x86)
+</li>
+<li>hidekimac (Mac)
+</li>
+</ul>
+
+<p>
+Unless somehow cross compiled, it should typically say it is built on <i>MIO</i> but is subject to change. (This is where the official binary would say <i>MARVIN</i>.)
+A binary package will also be signed using OpenPGP key AFF2E40B.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-3-3" class="outline-3">
+<h3 id="sec-3-3">Will it be the latest version?</h3>
+<div class="outline-text-3" id="text-3-3">
+<p>
+As long as my interest and compilation environment lasts. I'm moving toward <a href="http://www.linux.org/">Linux</a> these days, and thus, it is possible my self-interest of having self-compiled version of Emacs for Windows will be gone once the transition is complete.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-3-4" class="outline-3">
+<h3 id="sec-3-4">Which operating systems does it support?</h3>
+<div class="outline-text-3" id="text-3-4">
+<p>
+These are general guideline as I have not tested on every platform other than the one I have compiled on. You are more than welcome to try on any of platforms, but as the GPL says, there is "NO WARRANTY FOR THE PROGRAM" and rightly so.
+</p>
+</div>
+<div id="outline-container-sec-3-4-1" class="outline-4">
+<h4 id="sec-3-4-1">Windows</h4>
+<div class="outline-text-4" id="text-3-4-1">
+<p>
+It is built and tested on Windows 7. It should run on most of modern, but older Windows NT based platforms (i.e. Windows XP) without much issue, too. It will be probably difficult to run on Windows 9x operating systems. It should also run on newer Windows such as Windows 8, but I have not tested, and currently do not have any plans to test on the platform.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-3-4-2" class="outline-4">
+<h4 id="sec-3-4-2">Mac</h4>
+<div class="outline-text-4" id="text-3-4-2">
+<p>
+Built and tested on 10.8. May run on earlier version.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-3-5" class="outline-3">
+<h3 id="sec-3-5">Which library does it include?</h3>
+<div class="outline-text-3" id="text-3-5">
+</div><div id="outline-container-sec-3-5-1" class="outline-4">
+<h4 id="sec-3-5-1">For Windows</h4>
+<div class="outline-text-4" id="text-3-5-1">
+<p>
+This distribution is compiled to support all the libraries made available to be supported on Emacs on Windows. Having said that, you will need to download appropriate library to use those features.
+</p>
+
+<ul class="org-ul">
+<li><a href="http://gnuwin32.sourceforge.net/packages/libpng.htm">LibPng</a>
+</li>
+<li><a href="http://gnuwin32.sourceforge.net/packages/jpeg.htm">Jpeg</a>
+</li>
+<li><a href="http://gnuwin32.sourceforge.net/packages/giflib.htm">GIfLib</a>
+</li>
+<li><a href="http://gnuwin32.sourceforge.net/packages/tiff.htm">Tiff</a>
+</li>
+<li><a href="http://www.zlatkovic.com/libxml.en.html">LibXml</a>
+</li>
+<li><a href="http://www.gnutls.org/">GnuTLS</a>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-3-5-2" class="outline-4">
+<h4 id="sec-3-5-2">For Mac</h4>
+<div class="outline-text-4" id="text-3-5-2">
+<p>
+The distribution should satisfy every dependencies.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-3-6" class="outline-3">
+<h3 id="sec-3-6">How do I build Emacs?</h3>
+<div class="outline-text-3" id="text-3-6">
+<p>
+I have provided <a href="howto.html">documentation</a> of how it can be done.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-3-7" class="outline-3">
+<h3 id="sec-3-7">Where's that splash screen?</h3>
+<div class="outline-text-3" id="text-3-7">
+<p>
+You mean <a href="https://plus.google.com/103005664980673293345/posts/DzmihL834mt">this</a>? It's not included. You have to make your own &#x2013; look up "fancy splash" in the Customization.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-3-8" class="outline-3">
+<h3 id="sec-3-8">Is this page authored in Emacs, too?</h3>
+<div class="outline-text-3" id="text-3-8">
+<p>
+Of course. Emacs with Org-mode!
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4">About Hideki Saito</h2>
+<div class="outline-text-2" id="text-4">
+</div><div id="outline-container-sec-4-1" class="outline-3">
+<h3 id="sec-4-1">Who is Hideki Saito?</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+See <a href="https://plus.google.com/+HidekiSaito?rel=author">my Google+ page</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-4-2" class="outline-3">
+<h3 id="sec-4-2">What Hideki's most favorite things about Emacs?</h3>
+<div class="outline-text-3" id="text-4-2">
+<p>
+I've prepared <a href="emacs.html">an essay</a> about it. Check it out!
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5">Further Readings</h2>
+<div class="outline-text-2" id="text-5">
+<ul class="org-ul">
+<li><a href="articles.html">Emacs Articles</a>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6">Other links</h2>
+<div class="outline-text-2" id="text-6">
+<ul class="org-ul">
+<li><a href="http://www.gnu.org/software/emacs/">GNU Emacs</a> at <a href="http://www.fsf.org/">Free Software Foundation</a>
+</li>
+<li><a href="https://github.com/hsaito/hidekisaito-emacs-build-page">Source of this page</a> at <a href="http://www.github.com/">GitHub</a>
+</li>
+</ul>
+</div>
+
+<div id="outline-container-sec-6-1" class="outline-3">
+<h3 id="sec-6-1">Other Emacs Related Projects of Hideki Saito</h3>
+<div class="outline-text-3" id="text-6-1">
+<ul class="org-ul">
+<li><a href="https://github.com/hsaito/hideki-emacs-utilities">Hideki's Emacs Utilities</a> contains some small scripts
+</li>
+<li><a href="https://github.com/hsaito/skk-anime-dictionary">SKK Anime Dictionary</a> contains <a href="http://openlab.ring.gr.jp/skk/index-j.html">SKK</a> dictionary files of anime terms.
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-7" class="outline-2">
+<h2 id="sec-7">Like what's I'm doing?</h2>
+<div class="outline-text-2" id="text-7">
+<ul class="org-ul">
+<li>Bitcoin: <code>15EK2zSTCWpZqMk8nbZpVe2pEMZt6E3ST3</code>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Hideki Saito</p>
+<p class="date">Created: 2013-04-22 Mon 15:52</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.3.1 (<a href="http://orgmode.org">Org</a> mode 8.0.1)</p>
+<p class="xhtml-validation"><a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a></p>
+</div>
+</body>
+</html>
