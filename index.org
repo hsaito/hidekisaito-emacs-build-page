@@ -141,5 +141,10 @@ I've prepared [[file:emacs.org][an essay]] about it. Check it out!
 * Other links
 - [[http://www.gnu.org/software/emacs/][GNU Emacs]] at [[http://www.fsf.org/][Free Software Foundation]]
 - [[https://github.com/hsaito/hidekisaito-emacs-build-page][Source of this page]] at [[http://www.github.com/][GitHub]]
+
+** Other Emacs Related Projects of Hideki Saito
+- [[https://github.com/hsaito/hideki-emacs-utilities][Hideki's Emacs Utilities]] contains some small scripts
+- [[https://github.com/hsaito/skk-anime-dictionary][SKK Anime Dictionary]] contains [[http://openlab.ring.gr.jp/skk/index-j.html][SKK]] dictionary files of anime terms.
+
 * Like what's I'm doing?
 - Bitcoin: =15EK2zSTCWpZqMk8nbZpVe2pEMZt6E3ST3=
