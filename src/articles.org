@@ -25,6 +25,8 @@
 #+LINK_HOME: index.html
 #+XSLT:
 
+More Emacs articles are available at [[http://hideki.hclippr.com/][Hideki's Random Stuff]].
+
 * Org-mode at Sakura-Con
 This article explains use of [[http://www.orgmode.org/][Org-mode]] in a context of convention management.
 
