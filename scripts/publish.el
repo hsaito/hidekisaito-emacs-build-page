@@ -1,4 +1,5 @@
-(require 'org-publish)
+(require 'ox-html)
+(require 'ox-publish)
 
 ;; Requires Org-mode 8.0 or later
 ;; You may want add-to-list instead if you have existing projects...
