@@ -70,6 +70,14 @@ Since making users going through mess of installing dependencies just to run thi
 - [[file:files/xpm-3.5.1-1-src.zip][XPM Library]] 
 
 
+* Mirroring (Experimental)
+If you wish to mirror whole set of Emacs distribution here, you may choose to use [[http://labs.bittorrent.com/experiments/sync.html][BitTorrent Sync]] to sync.
+
+Please use the read only code:
+#+BEGIN_QUOTE
+RBU7XLPET43IWGFSLNJEGREIOZI6V4YE2
+#+END_QUOTE
+
 * About the Build
 
 ** What is the license?
