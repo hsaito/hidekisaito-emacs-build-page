@@ -78,6 +78,8 @@ Please use the read only code:
 RBU7XLPET43IWGFSLNJEGREIOZI6V4YE2
 #+END_QUOTE
 
+I've also thrown in some extra goodies in this distribution. (check in /Extras/ directory)
+
 * About the Build
 
 ** What is the license?
