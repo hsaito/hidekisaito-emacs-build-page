@@ -43,7 +43,7 @@ GNU Emacs is an extensible, customizable text editor—and more. At its core is 
 (As described in [[http://www.gnu.org/software/emacs/][GNU Emacs]])
 
 * Download
-Current version: *24.3*
+Current version: *24.3* (Most of versions below should say *24.3.1*. The least significant part of the version number shows the fact it was recompiled after creating an initial version. However I often base on refreshed version of sourcecode when this happens, this is not always accurate indication of how many times it is recompiled.)
 
 ** Binaries
 Use the following link to download the build. You can also see the [[file:files/][list of files]] provided here. Some downloads are available through [[http://www.bittorrent.com/][BitTorrent]]. As I do not have active [[http://en.wikipedia.org/wiki/BitTorrent_tracker][tracker]] on my end, it relies availability of a [[http://en.wikipedia.org/wiki/Distributed_hash_table][distributed tracker]] support. However, as a fallback, it contains webseed information pointing to this site.
@@ -77,6 +77,10 @@ Please use the read only code:
 #+BEGIN_QUOTE
 RBU7XLPET43IWGFSLNJEGREIOZI6V4YE2
 #+END_QUOTE
+
+This mirror contains distributed files (not website) only.
+
+If you are after source for this webpage, please visit its [[https://github.com/hsaito/hidekisaito-emacs-build-page][GitHub repository]]. (This contains corresponding .org files.)
 
 * About the Build
 
