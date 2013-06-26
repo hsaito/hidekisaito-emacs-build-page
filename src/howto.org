@@ -15,6 +15,7 @@
 #+HTML_HEAD:   ga('send', 'pageview');
 #+HTML_HEAD: 
 #+HTML_HEAD: </script>
+#+HTML_HEAD: <script async="" defer="" src="//survey.g.doubleclick.net/async_survey?site=7ly467cr4cmky"></script>
 #+LANGUAGE:  en
 #+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
 #+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
