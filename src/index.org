@@ -46,7 +46,7 @@ GNU Emacs is an extensible, customizable text editor—and more. At its core is 
 Current version: *24.3* (Most of versions below should say *24.3.1*. The least significant part of the version number shows the fact it was recompiled after creating an initial version. However I often base on refreshed version of sourcecode when this happens, this is not always accurate indication of how many times it is recompiled.)
 
 ** Binaries
-Use the following link to download the build. You can also see the [[file:files/][list of files]] provided here. Some downloads are available through [[http://www.bittorrent.com/][BitTorrent]]. As I do not have active [[http://en.wikipedia.org/wiki/BitTorrent_tracker][tracker]] on my end, it relies availability of a [[http://en.wikipedia.org/wiki/Distributed_hash_table][distributed tracker]] support. However, as a fallback, it contains webseed information pointing to this site.
+Use the following link to download the build. You can also see the [[file:files/][list of files]] provided here. Some downloads are available through [[http://www.bittorrent.com/][BitTorrent]].
 *** Windows
 - [[file:files/emacs-24.3-bin-i386-hs.zip][Emacs Build]] and its [[file:files/emacs-24.3-bin-i386-hs.zip.sig][signature file]] ([[http://emacs.hclippr.org/files/emacs-24.3-bin-i386-hs.zip.torrent][Download using BitTorrent]])
 - [[file:files/emacs-24.3-barebin-i386-hs.zip][Emacs Barebin Build]] and its [[file:files/emacs-24.3-barebin-i386-hs.zip.sig][signature file]] (mostly useful for upgrading) ([[http://emacs.hclippr.org/files/emacs-24.3-barebin-i386-hs.zip.torrent][Download using BitTorrent]])
