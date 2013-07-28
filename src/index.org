@@ -15,6 +15,7 @@
 #+HTML_HEAD:   ga('send', 'pageview');
 #+HTML_HEAD: 
 #+HTML_HEAD: </script>
+#+HTML_HEAD: <script async="" defer="" src="//survey.g.doubleclick.net/async_survey?site=7ly467cr4cmky"></script>
 #+LANGUAGE:  en
 #+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
 #+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
@@ -22,8 +23,6 @@
 #+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
 #+EXPORT_SELECT_TAGS: export
 #+EXPORT_EXCLUDE_TAGS: noexport
-#+LINK_UP:   
-#+LINK_HOME: 
 #+XSLT:
 
 #+ATTR_HTML: :alt Emacs logo :title Emacs logo :style height: 250px; width: 250px; float: right;
