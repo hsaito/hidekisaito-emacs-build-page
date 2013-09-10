@@ -115,7 +115,7 @@ As long as my interest and compilation environment lasts. I'm moving toward [[ht
 ** Which operating systems does it support?
 These are general guideline as I have not tested on every platform other than the one I have compiled on. You are more than welcome to try on any of platforms, but as the GPL says, there is "NO WARRANTY FOR THE PROGRAM" and rightly so.
 *** Windows
-It is built and tested on Windows 7. It should run on most of modern, but older Windows NT based platforms (i.e. Windows XP) without much issue, too. It will be probably difficult to run on Windows 9x operating systems. It should also run on newer Windows such as Windows 8, but I have not tested, and currently do not have any plans to test on the platform.
+It is built and tested on Windows 7. It should run on most of modern, but older Windows NT based platforms (i.e. Windows XP) without much issue, too. It will be probably difficult to run on Windows 9x operating systems. It should also run on newer Windows such as Windows 8, but I have not tested, and currently do not have any plans to test on the platform. It certainly *won't* work with Windows 8's Metro interface (or whatever they call it now...) as it is not coded to handle it and I (or anyone else as far a I know) will not be paying a fee to get it up there.
 
 *** Mac
 Built and tested on 10.8. May run on earlier version.
