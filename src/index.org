@@ -110,7 +110,7 @@ Unless somehow cross compiled, it should typically say it is built on /MIO/ but 
 A binary package will also be signed using OpenPGP key AFF2E40B.
 
 ** Will it be the latest version?
-As long as my interest and compilation environment lasts. I'm moving toward [[http://www.linux.org/][Linux]] these days, and thus, it is possible my self-interest of having self-compiled version of Emacs for Windows will be gone once the transition is complete.
+As long as my interest and compilation environment lasts. I'm moving toward [[http://www.linux.org/][Linux]] these days, and thus, it is possible my self-interest of having self-compiled version of Emacs for Windows will be gone once the transition is complete.[fn::And now the transition is complete, it is possible that no further Windows build will be provided...]
 
 ** Which operating systems does it support?
 These are general guideline as I have not tested on every platform other than the one I have compiled on. You are more than welcome to try on any of platforms, but as the GPL says, there is "NO WARRANTY FOR THE PROGRAM" and rightly so.
