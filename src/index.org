@@ -30,7 +30,7 @@ Use the following link to download the build. You can also see the [[file:files/
 
 *** Mac
 - [[file:files/Emacs-24_3-hs.dmg][Emacs build dmg disk image]] and its [[file:files/Emacs-24_3-hs.dmg.sig][signature file]] ([[http://emacs.hclippr.org/files/Emacs-24_3-hs.dmg.torrent][Download using BitTorrent]])
-- 10.9 users might find [[file:files/Emacs-24_3-hs-MacOS10_9.dmg][Emacs built on 10.9]] ([[file:files/Emacs-24_3-hs-MacOS10_9.dmg.sig][Signature]]) more stable.
+- 10.9 users might find [[file:files/Emacs-24_3-hs-MacOS10_9.dmg][Emacs built on 10.9]] ([[file:files/Emacs-24_3-hs-MacOS10_9.dmg.sig][Signature]]) more stable. ([[file:files/Emacs-24_3-hs-MacOS10_9.dmg.torrent][BitTorrent file]] for this is also available.)
 *** Linux
 Linux precompiled binary was attempted, however, handling of shared library makes it unpractical unless it is coupled with a package manager which can automatically satisfy dependencies, which I will not be committing at this point. Precompiled binaries on Linux will require every dependant shared libraries to exist in the system (and won't even run without them, whether you are using it or not) therefore, to provide /out of the box/ experience with Linux will require every dependencies to be packed into the binary, which is is not very realistic. 
 
