@@ -1,2 +1,6 @@
 *.exe
 *.sig
+*.dmg
+*.torrent
+*.zip
+*.tar.gz

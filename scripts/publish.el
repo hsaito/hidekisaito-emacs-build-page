@@ -23,7 +23,7 @@
 	
 	("hidekisaito-emacs-static"
 	 :base-directory "/path/to/files/src" ;; point this to your directory
-	 :base-extension "css\\|js\\|png\\|jpg\\|gif\\|pdf\\|mp3\\|ogg\\|swf"
+	 :base-extension "css\\|js\\|png\\|jpg\\|gif\\|pdf\\|mp3\\|ogg\\|swf\\|exe\\|sig\\|zip\\|dmg\\|torrent\\|tar.gz"
 	 :publishing-directory "/path/to/files/pub" ;; point this to your directory
 	 :recursive t
 	 :publishing-function org-publish-attachment
