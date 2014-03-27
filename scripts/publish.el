@@ -9,10 +9,16 @@
 	 :base-directory "/path/to/files/src" ;; point this to this your directory
 	 :base-extension "org"
 	 :publishing-directory "/path/to/files/pub" ;; point this to your directory
+	 :exclude "level-0.org"
+	 :sitemap
 	 :recursive t
 	 :publishing-function org-html-publish-to-html
 	 :headline-levels 4             ; Just the default for this project.
 	 :auto-preamble t
+	 :auto-sitemap t
+	 :html-link-up "sitemap.html"
+	 :html-link-home "index.html"
+	 :sitemap-title "Hideki Saito's Emacs Builds Sitemap"
 	 )
 	
 	("hidekisaito-emacs-static"
